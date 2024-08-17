@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: php-service
+    buildCommand: |
+      echo "No build command needed for PHP"
+    startCommand: |
+      php -S 0.0.0.0:10000
+    env:
+      - name: PHP_VERSION
+        value: "8.1"
+    plan: free
